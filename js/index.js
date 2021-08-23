@@ -17,12 +17,21 @@
   
 
 let btn = document.getElementById('add-me');
+let colors = ['red','blue','purple']
+let i=0
 btn.addEventListener('click',function(){
     let h1 = document.getElementById('my-h1')
     h1.innerHTML = ("I am student of bubt")
+    h1.style.color = colors[i]
+    if(i >= colors.length){
+    i=0;
+    }
+    else{
+    i++;
+    }
 
-    let p = document.getElementById('para')
-    p.innerHTML = (" I am currently working in html5,css3,js,react")
+    // let p = document.getElementById('para')
+    // p.innerHTML = (" I am currently working in html5,css3,js,react")
 })
 
 
